@@ -13,6 +13,7 @@ body {
   align-items: center;
   -webkit-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
 }
 
 .index-body .btn {
@@ -29,9 +30,7 @@ body {
   margin-top: 0.3rem;
 }
 
-.index-body .btn:first-child {
-
-}
+.index-body .btn:first-child {}
 
 .index-body .btn i {
   margin-right: 0.25rem;
@@ -39,5 +38,21 @@ body {
 
 .index-body .btn p {
   font-size: .36rem;
-  margin-right: 0.2rem;
+  margin-left: 0.6rem;
+  margin-right: 1rem;
+}
+
+.icon1 {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+.icon2 {
+  height: 0.6rem;
+  width: 0.6rem;
+}
+
+.icon3 {
+  height: 0.7rem;
+  width: 0.7rem;
 }

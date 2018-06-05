@@ -553,3 +553,12 @@ footer p {
     border: 0.01rem solid #FF0000 !important;
     background-color: #FFF0F0 !important;
 }
+
+input:-moz-read-only {
+    /* For Firefox */
+    background-color: #fff !important;
+}
+
+input:read-only {
+    background-color: #fff !important;
+}
