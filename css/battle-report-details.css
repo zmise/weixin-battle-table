@@ -1,0 +1,40 @@
+.form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* -webkit-align-items: center;
+  align-items: center; */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  padding-left: 0.4rem;
+}
+
+.form .item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 0.85rem;
+  box-sizing: border-box;
+  font-size: .28rem;
+  color: #d0d0d0;
+  font-weight: 100;
+  border-bottom: 0.01rem solid #ededed;
+}
+
+.form .item p {
+  color: #333;
+  font-weight: 100;
+  padding-left: 0.1rem;
+}
+
+.form .item:first-child p {
+  font-weight: 700;
+}
+
+.form .item:first-child {
+  color: #333;
+  font-weight: 700;
+}

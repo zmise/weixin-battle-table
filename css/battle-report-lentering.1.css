@@ -1,0 +1,222 @@
+.select-box,
+.select-input {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.select-box .item {
+  height: 0.88rem;
+  margin: 0 .24rem;
+  border-bottom: 0.01rem solid #ececee;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #3d3d3d;
+  font-weight: 300;
+  font-size: .24rem;
+}
+
+.select-input .item {
+  height: 0.88rem;
+  padding: 0 .24rem;
+  border-bottom: 0.01rem solid #ececee;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #3d3d3d;
+  font-weight: 300;
+  font-size: .24rem;
+}
+
+.select-input .item:last-child,
+.select-box .item:last-child {
+  border-bottom: 0;
+}
+
+.select-box input {
+  text-align: right;
+}
+
+.select-input .item:first-child {
+  background-color: #f1f1f1;
+}
+
+.select-input .item input {
+  text-align: right;
+}
+
+.select-input .item .ipt {
+  height: 0.65rem;
+  width: 1.8rem;
+  background-color: #f1f1f1;
+  border: 0;
+  padding: 0.1rem;
+}
+
+.save {
+  padding: 0.5rem 0;
+  background-color: #f1f1f1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex: 1;
+}
+
+.save p {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: .88rem;
+  width: 95%;
+  background-color: #FFC601;
+  border-radius: .08rem;
+}
+
+.overlay {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+#overlay .save-box,
+#overlay .areaBox,
+#overlay .box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  /* -webkit-align-items: center;
+  align-items: center; */
+  width: 6.8rem;
+  margin-bottom: 0.3rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: .08rem;
+  box-sizing: border-box;
+}
+
+#overlay .save-box p {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 1.06rem;
+  font-size: .3rem;
+  padding: 0.4rem;
+  color: rgba(42, 43, 45, 1);
+}
+
+#overlay .save-box .btn-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  height: .5rem;
+  font-size: .3rem;
+  padding: 0.4rem;
+}
+
+#overlay .save-box button {
+  padding: 0.2rem;
+  margin-left: 0.2rem;
+  color: #ffc601;
+}
+
+#overlay .areaBox .items,
+#overlay .box .items {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: .28rem;
+  height: 1.06rem;
+  color: rgba(42, 43, 45, 1);
+  border-bottom: 1px solid rgba(227, 230, 233, 1);
+  text-align: center;
+}
+
+#overlay .areaBox .current,
+#overlay .box .current {
+  color: #ffc601;
+}
+
+#overlay .save-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 6.8rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: .08rem;
+  box-sizing: border-box;
+}
+
+#overlay .dn {
+  display: none;
+}
+
+.dn {
+  display: none;
+}
+
+table tr {
+  border-top: .01rem solid #ccc;
+  border-bottom: .01rem solid #ccc;
+}
+
+table tr:first-child {
+  border-bottom-width: 0;
+  background-color: #ddd;
+}
+
+table th {
+  font-size: .2rem;
+  border: 0;
+  padding: .1rem 0;
+  overflow: hidden;
+  text-align: center;
+  color: #AEAEAE;
+  font-weight: 500
+}
+
+table td {
+  color: #AEAEAE;
+  font-size: .2rem;
+  font-weight: 100;
+  overflow: hidden;
+  text-align: center;
+  border: 0;
+  padding: .2rem 0;
+}
+
+table tr td:first-child {
+  border-right: .01rem solid #ccc;
+}
+
+table tr:first-child td:first-child {
+  border-right: 0;
+}

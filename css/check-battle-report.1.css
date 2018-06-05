@@ -1,0 +1,125 @@
+.title-body {
+  position: relative;
+  height: 1.35rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.title-body img {
+  width: 1.3rem;
+  height: 0.4rem;
+  padding-right: 0.2rem;
+}
+
+.title-body .title-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-bottom: 0.1rem;
+}
+
+.title-body .title-content p {
+  font-size: 0.38rem;
+  color: #ffc601;
+  font-weight: 300;
+}
+
+.title-body .date {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 3.35rem;
+  height: 0.45rem;
+  border: 0.01rem solid #ccc;
+}
+
+.title-body .date input {
+  margin-left: 0.01rem;
+  width: 90%;
+  height: 90%;
+  border: 0;
+  line-height: 1;
+  outline: none;
+  box-shadow: none;
+  border-color: #fff;
+  color: #000;
+  font-size: .16rem;
+  font-weight: 100;
+}
+
+.title-body .date .icon {
+  font-size: .2rem;
+}
+
+.title-body .unit {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  font-size: .1rem;
+  color: #ccc;
+  font-weight: 100;
+}
+
+/* 切换tap */
+
+.order-body {
+  height: .1rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  height: 0.88rem;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.order-body .items {
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  color: rgba(94, 100, 107, 1);
+}
+
+.order-body .txt {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: .26rem;
+}
+
+.order-body .txt .current {
+  background: #ffc601;
+  ;
+}
+
+.order-body .current {
+  color: #ffc601;
+  ;
+  border-bottom: 2px solid #ffc601;
+  ;
+}
+
+.dn {
+  display: none;
+}
+
+/* .order-body .current .number {
+  @include linear-gradient;
+} */

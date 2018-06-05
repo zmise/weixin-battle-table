@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>战报管理</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/battle-report-manage.css" rel="stylesheet">
+  <link href="css/filter.css" rel="stylesheet">
+  <link rel="stylesheet" href="font/iconfont.css">
+  <script type="text/javascript" src="js/jQuery.js"></script>
+  <script type="text/javascript" src="js/jquery.slide.js"></script>
+  <script type="text/javascript" src="js/jquery.translate.js"></script>
+  <script type="text/javascript" src="js/jquery.prefix.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/rem.js"></script>
+</head>
+
+
+<body>
+  <section class="filter-body">
+    <a class="items" href="javascript:;">
+      <span class="txt ellips area" id="area">位置</span>
+      <i class="icon"></i>
+    </a>
+    <a class="items" href="javascript:;">
+      <span class="txt ellips time" id="time">排序</span>
+      <i class="icon"></i>
+    </a>
+
+  </section>
+
+  <!-- 筛选弹出框 -->
+  <section class="filter-layer" style="display:none;">
+    <div class="filter-body">
+      <a class="items mostjs" href="javascript:;">
+        <span class="txt area">区域</span>
+        <i class="icon"></i>
+      </a>
+      <a class="items mostjs" href="javascript:;">
+        <span class="txt rule time">当前月份</span>
+        <i class="icon"></i>
+      </a>
+    </div>
+    <div class="filter-list onelist" style="display:none;">
+      <div class="content">
+        <div class="slide-body" js-plugin="slide" data-direction="vertical">
+          <div class="slide">
+            <!-- todo -->
+            <div class="items">
+              <i>所有区域</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items">
+              <i>罗湖中区</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items">
+              <i>罗湖西区</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items">
+              <i>罗湖南区</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items">
+              <i>深圳中区</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items">
+              <i>推荐排序</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-list twolist" style="display:none;">
+      <div class="content">
+        <div class="slide-body one-row" js-plugin="slide" data-direction="vertical">
+          <div class="slide">
+            <div class="items" href="javascript:;">2018年</div>
+            <div class="items" href="javascript:;">2017年</div>
+            <div class="items" href="javascript:;">2016年</div>
+            <div class="items" href="javascript:;">2015年</div>
+          </div>
+        </div>
+
+        <div class="slide-body two-row" js-plugin="slide" data-direction="vertical">
+          <div class="slide">
+            <!-- todo -->
+            <div class="items" href="javascript:;">
+              <i>6月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>5月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>4月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>3月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>2月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>1月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+          </div>
+        </div>
+        <div class="slide-body two-row" js-plugin="slide" data-direction="vertical">
+          <div class="slide">
+            <div class="items" href="javascript:;">
+              <i>12月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>11月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>10月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>9月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>8月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>7月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items" href="javascript:;">
+              <i>6月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>5月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>4月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>3月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>2月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>1月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+          </div>
+        </div>
+        <div class="slide-body two-row " js-plugin="slide" data-direction="vertical">
+          <div class="slide">
+            <div class="items" href="javascript:;">
+              <i>12月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>11月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>10月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>9月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>8月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>7月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items" href="javascript:;">
+              <i>6月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>5月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>4月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>3月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>2月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>1月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="slide-body two-row" js-plugin="slide" data-direction="vertical">
+          <div class="slide">
+            <div class="items" href="javascript:;">
+              <i>12月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>11月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>10月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>9月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>8月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>7月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items" href="javascript:;">
+              <i>6月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>5月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>4月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>3月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>2月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+            <div class="items " href="javascript:;">
+              <i>1月</i>
+              <i class="icon iconfont icon-duoxuanduigou"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <article class="article-body">
+    <div class="article-content">
+      <div class="line1">
+        <div class="line1-box">
+          <p>战报日期： 2018-4-30</p>
+        </div>
+        <i class="icon2 iconfont icon-xiangxia"></i>
+      </div>
+      <div class="line2">
+        <div class="item">
+          <p>罗湖中区</p>
+          <div>
+            <button class="btn1">查看</button>
+            <button class="btn2">战报详情</button>
+          </div>
+
+        </div>
+        <div class="item">
+          <p>罗湖中区</p>
+          <div>
+            <button class="btn1">查看</button>
+            <button class="btn2">战报详情</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article-content">
+      <div class="line1">
+        <div class="line1-box">
+          <p>战报日期： 2018-4-30</p>
+        </div>
+        <i class="icon2 iconfont icon-xiangxia"></i>
+      </div>
+      <div class="line2">
+        <div class="item">
+          <p>罗湖中区</p>
+          <div>
+            <button class="btn1">查看</button>
+            <button class="btn2">战报详情</button>
+          </div>
+
+        </div>
+        <div class="item">
+          <p>罗湖中区</p>
+          <div>
+            <button class="btn1">查看</button>
+            <button class="btn2">战报详情</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article-content">
+      <div class="line1">
+        <div class="line1-box">
+          <p>战报日期： 2018-4-30</p>
+        </div>
+        <i class="icon2 iconfont icon-xiangxia"></i>
+      </div>
+      <div class="line2">
+        <div class="item">
+          <p>罗湖中区</p>
+          <div>
+            <button class="btn1">查看</button>
+            <button class="btn2">战报详情</button>
+          </div>
+
+        </div>
+        <div class="item">
+          <p>罗湖中区</p>
+          <div>
+            <button class="btn1">查看</button>
+            <button class="btn2">战报详情</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+
+  <footer>
+    <a>
+      <i class="iconfont icon-"></i>
+      <p>战报录入</p>
+    </a>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/battle-report-manage.js"></script>
+
+</body>
+
+</html>

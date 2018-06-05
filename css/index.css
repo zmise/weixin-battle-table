@@ -1,0 +1,43 @@
+body {
+  background: url('../images/bgimg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.index-body {
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.index-body .btn {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border: 0.01rem solid #dcdcdc;
+  width: 5.7rem;
+  height: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.index-body .btn:first-child {
+
+}
+
+.index-body .btn i {
+  margin-right: 0.25rem;
+}
+
+.index-body .btn p {
+  font-size: .36rem;
+  margin-right: 0.2rem;
+}

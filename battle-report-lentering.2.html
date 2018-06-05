@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>战报录入</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/battle-report-lentering.2.css" rel="stylesheet">
+  <!-- <link href="css/index.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="font/iconfont.css"> -->
+  <script type="text/javascript" src="js/jQuery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/rem.js"></script>
+</head>
+
+
+<body>
+  <section class="select-box">
+    <div class="item" id="areaBox">
+      <p>区域</p>
+      <div>
+        <p id="area">罗湖中区</p>
+        <i></i>
+      </div>
+    </div>
+    <div class="item">
+      <p>录入人</p>
+      <input type="text" placeholder="zmise">
+    </div>
+    <div class="item" id="timeBox">
+      <p>战报时间</p>
+      <div>
+        <p class="today" id="time">罗湖中区</p>
+        <i></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="vm" action="#">
+    <div class="select-input">
+      <div class="item">
+        <p>二手</p>
+      </div>
+      <div class="item">
+        <p>单量</p>
+        <input v-model="secondHandNumber" class="ipt" type="text" placeholder="0.00">
+      </div>
+      <div class="item">
+        <p>业绩（万）</p>
+        <input v-model="secondHandIncome" class="ipt" type="text" placeholder="0.00">
+      </div>
+    </div>
+    <div class="select-input">
+      <div class="item">
+        <p>一手</p>
+      </div>
+      <div class="item">
+        <p>单量</p>
+        <input v-model="oneHandNumber" class="ipt" type="text" placeholder="0.00">
+      </div>
+      <div class="item">
+        <p>业绩（万）</p>
+        <input v-model="oneHandIncome" class="ipt" type="text" placeholder="0.00">
+      </div>
+    </div>
+    <div class="select-input">
+      <div class="item">
+        <p>租单</p>
+      </div>
+      <div class="item">
+        <p>单量</p>
+        <input v-model="rentListNumber" class="ipt" type="text" placeholder="0.00">
+      </div>
+      <div class="item">
+        <p>业绩（万）</p>
+        <input v-model="rentListIncome" class="ipt" type="text" placeholder="0.00">
+      </div>
+    </div>
+    <div class="select-input">
+      <div class="item">
+        <p>铺位</p>
+      </div>
+      <div class="item">
+        <p>铺位数</p>
+        <input type="number" placeholder="0.00">
+      </div>
+
+    </div>
+    <table style="width:100%">
+      <tr>
+        <th style="width: 2.6rem" id="dateRange"></th>
+        <th>二手</th>
+        <th>一手</th>
+        <th>租单</th>
+        <th>合计</th>
+      </tr>
+      <tr>
+        <td>总单量</td>
+        <td>{{newSecondHandNumber}}</td>
+        <td>{{newOneHandNumber}}</td>
+        <td>{{newRentListNumber}}</td>
+        <td>{{totleNumber}}</td>
+      </tr>
+      <tr>
+        <td>总业绩</td>
+        <td>{{newSecondHandIncome}}</td>
+        <td>{{newOneHandIncome}}</td>
+        <td>{{newRentListIncome}}</td>
+        <td>{{totleIncome}}</td>
+      </tr>
+    </table>
+  </section>
+
+
+
+
+
+  <section class="save" id="save">
+    <p>战报录入</p>
+  </section>
+  <div class="overlay dn" id="overlay">
+
+    <div class="box dn">
+      <div class="items yesterday">
+      </div>
+      <div class="items current today">
+      </div>
+    </div>
+    <div class="areaBox dn">
+      <div class="items">
+        所有区域
+      </div>
+      <div class="items current">
+        罗湖中区
+      </div>
+      <div class="items">
+        罗湖西区
+      </div>
+      <div class="items">
+        罗湖南区
+      </div>
+      <div class="items">
+        深圳中区
+      </div>
+    </div>
+    <div class="save-box dn">
+      <p>当日租单/一手/二手业绩金额超过1000万元，是否提交？</p>
+      <div class="btn-box">
+        <button>取消</button>
+        <button>保存</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="text/javascript" src="js/vue.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/battle-report-lentering.2.js"></script>
+
+</body>
+
+</html>
