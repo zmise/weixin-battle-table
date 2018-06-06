@@ -1,0 +1,30 @@
+body {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.content {
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+img {
+  width: 0.95rem;
+  height: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.content p {
+  font-size: .34rem;
+  color: rgba(138, 134, 134, 1);
+  line-height: 45px;
+}
