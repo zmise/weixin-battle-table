@@ -6,7 +6,7 @@ $(function () {
       title: '组织',
       name: 'itemName', // 第二列的名字  下面数值要与之有 映射关系
       align: 'center',
-      width: 240,
+      width: 170,
       lockWidth: true
     }, {
       title: '售单量',
@@ -18,7 +18,7 @@ $(function () {
       title: '售业绩',
       name: 'wsTransferCount',// 列的名字  下面数值要与之有 映射关系
       align: 'center',
-      width: 180,
+      width: 100,
       lockWidth: true
     }, {
       title: '租单量',
@@ -38,11 +38,11 @@ $(function () {
       title: '总业绩',
       name: 'dealRate',// 列的名字  下面数值要与之有 映射关系
       align: 'center',
-      width: 180,
+      width: 100,
       lockWidth: true,
       type: 'number'
     }, {
-      title: '铺均业绩<i class="iconfont icon-"></i>',
+      title: '铺均业绩',
       name: 'zmise',// 列的名字  下面数值要与之有 映射关系
       align: 'center',
       width: 180,
@@ -234,6 +234,11 @@ $(function () {
     $(this).find('tr:last-child td:first-child').text('');
     $(this).find('tr:last-child td:eq(1)').css('font-size', '.28rem');
     $(this).find('tr:last-child').css('background', '#4f5357').find('span').css('color', '#d2d3d4').end().find('td:last-child i').css('color', '#fff');
+
+    $(this).find('tr td:last-child i').append('<i class="icon iconfont icon-xiangyou"></i>');
+
+
+
     var $list = $(this).find('tr td span');
     for (var i = 0; i < $list.length; i++) {
       if ($list.eq(i).text() === '0') {
@@ -283,7 +288,7 @@ $(function () {
       lockWidth: true,
       type: 'number'
     }, {
-      title: '铺均业绩<i class="iconfont icon-"></i>',
+      title: '铺均业绩',
       name: 'zmise',// 列的名字  下面数值要与之有 映射关系
       align: 'center',
       width: 180,

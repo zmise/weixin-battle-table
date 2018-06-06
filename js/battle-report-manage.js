@@ -26,14 +26,13 @@ $(function () {
   $('.onelist').on('click', '.items', function (e) {
     e.stopPropagation();
     e.preventDefault();
-    $('.area').text($(this).text());
+    $('.area').text($(this).text()).css('color', '#ff6600');
     hideFilterLayer()
   });
   $('.twolist').on('click', '.two-row .items', function (e) {
     e.stopPropagation();
     e.preventDefault();
-    $('.time').text($('.one-row .current').text() + $(this).text().replace(/\s+/g, ""));
-    console.log($('.one-row .current').text() + $(this).text().replace(/\s+/g, ""));
+    $('.time').text($('.one-row .current').text() + $(this).text().replace(/\s+/g, "")).css('color', '#ff6600');
     hideFilterLayer();
   });
 });

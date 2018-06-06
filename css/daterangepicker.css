@@ -160,7 +160,7 @@
 }
 
 .daterangepicker td.in-range {
-  background-color: #ebf4f8;
+  background-color: #FDF5DF;
   border-color: transparent;
   color: #000;
   border-radius: 0;
@@ -180,7 +180,7 @@
 
 .daterangepicker td.active,
 .daterangepicker td.active:hover {
-  background-color: #357ebd;
+  background-color: #ff9900;
   border-color: transparent;
   color: #fff;
 }

@@ -240,11 +240,11 @@
 }
 
 .filter-list .content .slide-body .current {
-    color: rgba(90, 165, 114, 1);
+    color: #ff6600;
 }
 
 .filter-list .content .slide-body:first-child .current {
-    color: rgba(90, 165, 114, 1);
+    color: #ff6600;
     background-color: #fff;
 }
 

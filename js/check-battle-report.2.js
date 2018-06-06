@@ -42,10 +42,10 @@ $(function () {
       lockWidth: true,
       type: 'number'
     }, {
-      title: '铺均业绩<i class="iconfont icon-"></i>',
+      title: '铺均业绩<i class="icon iconfont icon-plus-shiftdown"></i>',
       name: 'zmise',// 列的名字  下面数值要与之有 映射关系
       align: 'center',
-      width: 180,
+      width: 210,
       lockWidth: true,
       // sortable: true,
       type: 'number'

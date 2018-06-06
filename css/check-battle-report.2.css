@@ -28,7 +28,7 @@
 .title-body .title-content p {
   font-size: 0.38rem;
   color: #ffc601;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .title-body .date {
@@ -36,7 +36,7 @@
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  width: 3.35rem;
+  width: 3.75rem;
   height: 0.45rem;
   border: 0.01rem solid #ccc;
 }
@@ -51,8 +51,8 @@
   box-shadow: none;
   border-color: #fff;
   color: #000;
-  font-size: .16rem;
-  font-weight: 100;
+  font-size: .2rem;
+  background-color: #f7f7f7;
 }
 
 .title-body .date .icon {
@@ -68,4 +68,9 @@
   font-weight: 100;
 }
 
-
+.mmGrid .mmg-headWrapper .mmg-head th .mmg-titleWrapper .mmg-title .icon {
+  display: inline-block;
+  font-size: .2rem;
+  font-weight: 300;
+  color: #999;
+}

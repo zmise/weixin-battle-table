@@ -1,3 +1,7 @@
+body {
+  background-color: #fff;
+}
+
 .form {
   display: -webkit-flex;
   display: flex;
@@ -20,13 +24,13 @@
   box-sizing: border-box;
   font-size: .28rem;
   color: #d0d0d0;
-  font-weight: 100;
+  /* font-weight: 100; */
   border-bottom: 0.01rem solid #ededed;
 }
 
 .form .item p {
   color: #333;
-  font-weight: 100;
+  /* font-weight: 100; */
   padding-left: 0.1rem;
 }
 

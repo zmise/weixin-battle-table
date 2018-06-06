@@ -1,3 +1,4 @@
+
 .cale-body {
   height: 1rem;
   padding: 0 .24rem;
@@ -12,6 +13,9 @@
   font-weight: 300;
   font-size: .3rem;
   overflow: hidden;
+  background: #fff;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
 }
 
 .cale-body .input-cale {
@@ -44,7 +48,6 @@
   -webkit-flex: 1;
   flex: 1;
   background-color: #FFC601;
-  border-radius: .08rem;
   color: #fff;
   height: .98rem;
 }
@@ -52,7 +55,11 @@
 .building p {
   font-size: 0.36rem;
   margin-left: 0.1rem;
-  font-weight: 100;
+  text-shadow: #3d3d3d;
 }
 
-.building i {}
+.building img {
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.1rem;
+}
