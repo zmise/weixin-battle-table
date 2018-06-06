@@ -114,6 +114,8 @@
   background: rgba(255, 255, 255, 1);
   border-radius: .08rem;
   box-sizing: border-box;
+  max-height: 10rem;
+  overflow: auto;
 }
 
 #overlay .save-box p {
@@ -160,9 +162,11 @@
   justify-content: center;
   font-size: .28rem;
   height: 1.06rem;
+  padding: .45rem 0;
   color: rgba(42, 43, 45, 1);
   border-bottom: 1px solid rgba(227, 230, 233, 1);
   text-align: center;
+  box-sizing: border-box;
 }
 
 #overlay .areaBox .current,

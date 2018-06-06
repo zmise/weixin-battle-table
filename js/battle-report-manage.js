@@ -1,4 +1,6 @@
 $(function () {
+
+
   var $filterLayer = $('.filter-layer');
   var $filterBody = $('.filter-body');
   var $filterList = $('.filter-list');
@@ -35,4 +37,7 @@ $(function () {
     $('.time').text($('.one-row .current').text() + $(this).text().replace(/\s+/g, "")).css('color', '#ff6600');
     hideFilterLayer();
   });
+
+  $('.twolist .one-row .items:first-child').addClass('current');
+  $('.twolist .two-row').eq(0).css('display', 'block');
 });
