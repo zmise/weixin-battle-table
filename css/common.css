@@ -374,7 +374,7 @@ body {
 
 .mmGrid .mmg-bodyWrapper .mmg-body tr td:nth-child(2) {
     color: #999;
-    text-align: left;
+    text-align: center;
 }
 
 .mmGrid .mmg-bodyWrapper .mmg-body tr td:first-child {
@@ -502,6 +502,7 @@ body {
 }
 
 .mmGrid .mmg-bodyWrapper .mmg-body td i {
+    position: relative;
     display: block;
     color: #333;
     font-weight: 700;

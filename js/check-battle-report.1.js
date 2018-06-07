@@ -490,13 +490,7 @@ $(function () {
   //   初始化隐藏第二个list
   $('.page-table:eq(1)').addClass('dn');
   //   onSelect 某一项选中时
-  $("#datepicker").datepicker({
-    range: true,
-    multipleDatesSeparator: ' - ',
-    onSelect: function (formattedDate, date, inst) {
-      console.log(formattedDate);
-    }
-  });
+
 
   //点击全部评价和待评价之间的切换
   $('.order-body').on('click', '.items', function (e) {
@@ -508,5 +502,46 @@ $(function () {
     // var params = {
     //   commentStatus: $(this).data('commentStatus')
     // };
+  });
+
+  $('#datepicker').daterangepicker({
+    locale: {
+      direction: 'ltr',
+      format: 'YYYY.MM.DD',
+      separator: ' - ',
+      applyLabel: '确定',
+      cancelLabel: '取消',
+      fromLabel: 'From',
+      toLabel: 'To',
+      customRangeLabel: 'Custom',
+      daysOfWeek: [
+        '日',
+        '一',
+        '二',
+        '三',
+        '四',
+        '五',
+        '六'
+      ],
+      monthNames: [
+        '一月',
+        '二月',
+        '三月',
+        '四月',
+        '五月',
+        '六月',
+        '七月',
+        '八月',
+        '九月',
+        '十月',
+        '十一月',
+        '十二月'
+      ],
+      firstDay: 1
+    },
+    startDate: '2018.06.01',
+    endDate: '2018.06.02'
+  }, function (start, end, label) {
+    console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
   });
 })

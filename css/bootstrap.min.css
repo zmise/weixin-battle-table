@@ -8796,16 +8796,18 @@ button.close {
   background: #f5f5f5;
 }
 
-.mmGrid .mmg-bodyWrapper .mmg-body tr.hover td {
+.mmGrid .mmg-bodyWrapper .mmg-body tr:not(:last-child).hover td {
   background: #e1eff8;
 }
 
-.mmGrid .mmg-bodyWrapper .mmg-body tr:hover td {
+.mmGrid .mmg-bodyWrapper .mmg-body tr:not(:last-child):hover td {
   background: #e1eff8;
 }
 
-.mmGrid .mmg-bodyWrapper .mmg-body tr.selected td {
-  background: #fff5cc;
+/* todo */
+
+.mmGrid .mmg-bodyWrapper .mmg-body tr:last-child.selected td {
+  /* background: #fff5cc; */
 }
 
 .mmGrid .mmg-bodyWrapper .mmg-body td .mmg-index {
@@ -8884,7 +8886,7 @@ button.close {
 
 .mmGrid {
   /* border-radius: 4px; */
-  box-shadow: 0 1px 1px  rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
 }
 
 .mmGrid .mmg-headWrapper {
@@ -8918,16 +8920,18 @@ button.close {
   border-bottom: 1px solid #ddd;
 }
 
-.mmGrid .mmg-bodyWrapper .mmg-body tr.hover td {
+.mmGrid .mmg-bodyWrapper .mmg-body tr:not(:last-child).hover td {
   background: #f5f5f5;
 }
 
-.mmGrid .mmg-bodyWrapper .mmg-body tr:hover td {
+.mmGrid .mmg-bodyWrapper .mmg-body tr:not(:last-child):hover td {
   background: #f5f5f5;
 }
 
-.mmGrid .mmg-bodyWrapper .mmg-body tr.selected td {
-  background: #fcf8e3;
+/* todo */
+
+.mmGrid .mmg-bodyWrapper .mmg-body tr:last-child.selected td {
+  /* background: #fcf8e3; */
 }
 
 .mmGrid .mmg-frozen {

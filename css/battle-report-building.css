@@ -1,4 +1,3 @@
-
 .cale-body {
   height: 1rem;
   padding: 0 .24rem;
@@ -34,6 +33,7 @@
   flex: 1;
   text-align: right;
   margin-right: 0.1rem;
+  border: 0;
 }
 
 .building {

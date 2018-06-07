@@ -39,6 +39,7 @@
   width: 3.35rem;
   height: 0.45rem;
   border: 0.01rem solid #ccc;
+  padding-left: 0.1rem;
 }
 
 .title-body .date input {
@@ -64,7 +65,7 @@
   bottom: 0.1rem;
   right: 0.1rem;
   font-size: .1rem;
-  color: #ccc;
+  color: #333;
   font-weight: 100;
 }
 
@@ -125,6 +126,9 @@
 } */
 
 .mmGrid .mmg-bodyWrapper .mmg-body td .icon {
+  position: absolute;
+  right: 0.05rem;
+  top: -0.04rem;
   display: inline;
   font-size: .3rem;
   font-weight: 300;
